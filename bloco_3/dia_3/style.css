@@ -1,0 +1,24 @@
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
+
+  .padding {
+      padding: 20px;
+  }
+
+  .margin {
+  /* insira aqui uma margem de 30px na classe abaixo para aplicá-la aos itens C e D */
+  }
+
+  .border {
+  /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+  }
