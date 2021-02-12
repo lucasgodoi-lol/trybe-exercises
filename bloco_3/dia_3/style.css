@@ -20,5 +20,5 @@
   }
 
   .border {
-  /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+      border: 5px solid black;
   }
