@@ -1,4 +1,19 @@
 div:hover {
     background-color: violet;
+}
+div:first-of-type{
+    background-color: rgb(223, 52, 52);
 
+}
+div:nth-of-type(2){
+    background-color: yellowgreen;
+}
+div:nth-of-type(3){
+    background-color: turquoise;
+}
+div:nth-of-type(4){
+    background-color:rgb(70, 6, 70);
+}
+div:nth-of-type(5){
+    background-color: yellow;
 }
