@@ -8,3 +8,27 @@
          z-index: 2;
          top: 1300px;
 }
+.baloon {position: absolute;
+        z-index: 4;
+        top: 2950px;
+        left: 300px;
+       
+        
+      
+
+}
+.word {position:absolute;
+      z-index: 5;
+      left: 362px;
+      top: 3010px;
+      text-align: center;
+      
+      
+       
+}
+.bowser {
+        z-index: 3;
+        position:absolute;
+        top: 2800px;
+        left: 500px;
+}
