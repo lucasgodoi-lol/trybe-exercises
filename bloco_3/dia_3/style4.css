@@ -28,6 +28,7 @@ div:nth-of-type(0n+2) > h3{
 }
 div:nth-of-type(0n+3) > h3{
     font-size: 50px;
+    font-style:unset;
 }
 
 div:nth-of-type(4) > h3{
@@ -38,4 +39,8 @@ div:nth-of-type(5) > h3{
     padding: 20px;
     font-size: 40px;
     
+}
+div:nth-of-type(2n+1) > :nth-child(1){
+    font-style: italic;
+
 }
