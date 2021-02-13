@@ -10,6 +10,7 @@ div:nth-of-type(2){
 }
 div:nth-of-type(3){
     background-color: turquoise;
+    padding: 20px;
 }
 div:nth-of-type(4){
     background-color:rgb(70, 6, 70);
