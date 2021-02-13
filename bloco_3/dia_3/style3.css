@@ -4,3 +4,6 @@
 li:hover{
     background-color: #00e1ff;
 }
+li:active{
+    color: white;
+}
