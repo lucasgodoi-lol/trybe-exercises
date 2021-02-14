@@ -27,16 +27,21 @@ ul:nth-of-type(1)>:nth-child(-n+3){
 .java {
     background-color: pink;
 }
-
-
-
-
-
-
-
-
-
-
+li.stack:hover a {
+      color: orange;
+}
+li.w3s:hover a{
+    color: green;
+}
+.MDN:hover a {
+    color: black;
+}
+.dev:hover a{
+    color: yellow;
+}
+.trybe:hover a{
+    color: green;
+}
 
 
 /*
