@@ -21,7 +21,12 @@ h1 {
 .negrito{
     font-weight: bold;
 }
-
+ul:nth-of-type(1)>:nth-child(-n+3){
+   color: blue;
+}
+.java {
+    background-color: pink;
+}
 
 
 
