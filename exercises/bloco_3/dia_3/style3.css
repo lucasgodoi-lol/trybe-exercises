@@ -1,0 +1,11 @@
+#centralizando {
+    text-align: center;
+}
+li:hover{
+    background-color: #00e1ff;
+}
+li:active,li{
+    color: rgb(233, 132, 132);
+    list-style: none;
+
+}
