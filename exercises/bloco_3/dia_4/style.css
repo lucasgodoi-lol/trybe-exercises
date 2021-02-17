@@ -2,7 +2,6 @@
 h1 {
     text-align: center;
   }
-
   .first {
     background-color: rgb(235, 200, 84);
     font-size: 20px;
@@ -10,9 +9,8 @@ h1 {
     width: 200px;
     display: block;
     text-align: center;
-    margin : auto
+    margin: auto;
   }
-
   .second {
     background-color: rgb(219, 219, 219);
     font-size: 20px;
@@ -33,32 +31,32 @@ h1 {
   h3{
       text-align: center;
   }
-.primeiro{
+.linha1{
     display: inline-block;
     text-align: center;
 }
-.segundo{
+.linha2{
         display: inline-block;
 }
-.terceiro{
+.linha3{
       display: inline-block;
     
 }
-.quarto {
+.linha4 {
     display: inline-block;
     text-align: center;
 }
-.quinto {
+.linha5 {
     display: inline-block;
    
 }
-.sexto {
+.linha6 {
     display: inline-block;
 }
-.text1 {
+.text0 {
     text-align: center;
 }
-.text0 {
+.text1 {
     text-align: center;
 }
 .texto2 {
