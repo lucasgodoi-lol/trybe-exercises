@@ -31,38 +31,12 @@ h1 {
   h3{
       text-align: center;
   }
-.linha1{
-    display: inline-block;
-    text-align: center;
-}
-.linha2{
-        display: inline-block;
-}
-.linha3{
-      display: inline-block;
-    
-}
-.linha4 {
-    display: inline-block;
-    text-align: center;
-}
-.linha5 {
-    display: inline-block;
-   
-}
-.linha6 {
-    display: inline-block;
-}
-.text0 {
-    text-align: center;
-}
-.text1 {
-    text-align: center;
-}
-.texto2 {
-    text-align: center;
 
+ul{
+    list-style: none;
+    text-align: center;
 }
-.texto3 {
-   text-align: center
+li {
+    display: inline-block;
+
 }
