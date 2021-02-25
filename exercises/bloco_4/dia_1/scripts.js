@@ -17,11 +17,25 @@ let modulo = a % b ;
 // console.log(modulo)
 
 // Exercicios 2
-let num1 = 10;
-let num2 = 20;
+a = 10;
+b = 20;
 
-if(10 > 20){
-    // console.log( "menor")
-} else if ( 20 > 10){
-    //  console.log("maior")
+if(a > b){
+    // console.log( "a é menor que b")
+} else if ( b > a){
+    //  console.log(" b é maior que a")
+}
+
+// Exercicios 3
+
+a = 50;
+b = 130;
+c = 300;
+
+if(a > b && a > c) {
+    console.log ("50 é o numero maior")
+}else if (b > a && b > c) {
+    console.log ("130 é o numero maior")
+}else {
+    console.log("300 é o numero maior")
 }
