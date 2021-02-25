@@ -33,9 +33,20 @@ b = 130;
 c = 300;
 
 if(a > b && a > c) {
-    console.log ("50 é o numero maior")
+    // console.log ("50 é o numero maior")
 }else if (b > a && b > c) {
-    console.log ("130 é o numero maior")
+    // console.log ("130 é o numero maior")
 }else {
-    console.log("300 é o numero maior")
+    // console.log("300 é o numero maior")
+}
+
+// Exercicios 4
+a = 40 
+
+if(a > 0 ) {
+// console.log("positive")
+}else if (a < 0){
+    // console.log("negative")
+}else {
+    // console.log(0)
 }
