@@ -128,13 +128,17 @@ if (a % 2 === 1 || b % 2 === 1 || c % 2 === 1 ){
 
 // Exercicio 10
 
-let custo = 100
-let venda = 300
-let impostoCusto = 100 * 0.20;
-let valorCustoTotal = custo + impostoCusto;
-let lucro = venda -  valorCustoTotal
-// console.log ( lucro * 1000)
+let custoProduto = 300;
+let valrDeVenda = 500;
+let impostoProduto = 300 * 0.2;
+let valorCustoTotal = custoProduto + impostoProduto;
+let lucro = valrDeVenda - valorCustoTotal;
 
-if (venda < 0 && custo <0){
-    // console.log("Erro")
+
+if ( custoProduto < 0 || valrDeVenda < 0){
+    console.log("Erro")
+}else {
+    console.log(lucro * 1000)
 }
+
+
