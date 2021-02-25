@@ -50,3 +50,14 @@ if(a > 0 ) {
 }else {
     // console.log(0)
 }
+// Exercicio 5 
+a = 60 
+b = 60 
+c = 60 
+let trianguloEquilatero = a + b + c;
+
+if (trianguloEquilatero === 180 ){
+    // console.log (true)
+}else {
+    // console.log(false)
+}
