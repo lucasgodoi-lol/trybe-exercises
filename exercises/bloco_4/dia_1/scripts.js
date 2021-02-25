@@ -110,7 +110,18 @@ b = 3
 c = 7
 
 if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0 ){
-    console.log(true)
+    // console.log(true)
 }else  {
-    console.log(false)
+    // console.log(false)
+}
+
+// Exercicio 9
+a = 2
+b = 7
+c = 4
+
+if (a % 2 === 1 || b % 2 === 1 || c % 2 === 1 ){
+    // console.log(true)
+}else {
+    // console.log(false)
 }
