@@ -8,4 +8,10 @@ let menuServices = menu[1];
 // Exercicio 2
 
 let indexOfPortfolio = menu.indexOf('Portfólio')
-console.log(indexOfPortfolio)
+// console.log(indexOfPortfolio)
+
+// Exercicio 3 
+
+menu.push('Contato')
+console.log(menu)
+
