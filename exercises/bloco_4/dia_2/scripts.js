@@ -1,5 +1,5 @@
 // Exercicio 1
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // for(let index = 0;index < numbers.length;index += 1){
 //     console.log(numbers[index])
@@ -80,12 +80,10 @@ let numeros = []
 for(let index = 1; index <= 25 ;index += 1){
     numeros.push(index)  
 }
-console.log("Os numero são :" + numeros)
+// console.log("Os numero são :" + numeros)
 
 // // Exercicio 9 
 
-
-
-// for (let index = 0; index < numeros.length ; index += 1){
-//     console.log(numeros[index] / 2)
-// }
+for(let index = 1; index <= 25 ;index += 1){
+    console.log(numeros[index] / 2)
+}
