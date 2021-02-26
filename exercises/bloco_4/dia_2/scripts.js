@@ -51,4 +51,13 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //     }
 // }console.log("O numero maior é = " + numeromaior)
 
-let
+// Exerccicio 6
+// let valor = 0;
+
+// for(let index = 0;index < numbers.length;index += 1){
+//   if(numbers[index] % 2 === 1){
+//      valor += 1;
+//   }else if (numbers[index] && valor === 0){
+//       console.log("Nenhum valor ímpar encontrado")
+//   }
+// }  console.log(valor)
