@@ -1,5 +1,5 @@
 // Exercicio 1
-// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // for(let index = 0;index < numbers.length;index += 1){
 //     console.log(numbers[index])
@@ -64,7 +64,8 @@
 
 // Exercicio 7
 
-// let numeroMenor = 2000329012390312;
+
+// let numeroMenor = 1000;
 
 // for(let index = 0;index < numbers.length;index += 1){
 //     if( numbers[index] < numeroMenor){
@@ -74,17 +75,17 @@
 
 // Exercicio 8
 
-let numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-numeros.push(21,22,23,24,25)
+let numeros = []
 
-// for(let index = 0; index < numeros.length;index += 1){
-//     console.log(numeros[index])
-// }
-
-// Exercicio 9 
-
-
-
-for (let index = 0; index < numeros.length ; index += 1){
-    console.log(numeros[index] / 2)
+for(let index = 1; index <= 25 ;index += 1){
+    numeros.push(index)  
 }
+console.log("Os numero são :" + numeros)
+
+// // Exercicio 9 
+
+
+
+// for (let index = 0; index < numeros.length ; index += 1){
+//     console.log(numeros[index] / 2)
+// }
