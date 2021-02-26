@@ -64,10 +64,17 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercicio 7
 
-let numeroMenor = 2000329012390312;
+// let numeroMenor = 2000329012390312;
 
-for(let index = 0;index < numbers.length;index += 1){
-    if( numbers[index] < numeroMenor){
-        numeroMenor = numbers[index]
-    }
-} console.log(numeroMenor)
+// for(let index = 0;index < numbers.length;index += 1){
+//     if( numbers[index] < numeroMenor){
+//         numeroMenor = numbers[index]
+//     }
+// } console.log(numeroMenor)
+
+let numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+numeros.push(21,22,23,24,25)
+
+for(let index = 0; index < numeros.length;index += 1){
+    console.log(numeros[index])
+}
