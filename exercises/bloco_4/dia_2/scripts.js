@@ -61,3 +61,13 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //       console.log("Nenhum valor ímpar encontrado")
 //   }
 // }  console.log(valor)
+
+// Exercicio 7
+
+let numeroMenor = 2000329012390312;
+
+for(let index = 0;index < numbers.length;index += 1){
+    if( numbers[index] < numeroMenor){
+        numeroMenor = numbers[index]
+    }
+} console.log(numeroMenor)
