@@ -126,7 +126,7 @@ if (a % 2 === 1 || b % 2 === 1 || c % 2 === 1 ){
      // console.log(false)
 }
 
-Exercicio 10
+// Exercicio 10
 
 let custoProduto = 300;
 let valrDeVenda = 500;
@@ -144,7 +144,7 @@ if ( custoProduto < 0 || valrDeVenda < 0){
 // Exercicio 11
 
 let salarioBruto = 3000;
-let aliquota ; 0
+let aliquota = 0
 
 if( salarioBruto <= 1556.94){
   aliquota = salarioBruto * 0.08;
