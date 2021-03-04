@@ -15,6 +15,13 @@ document.querySelector('#pai').appendChild(brother)
 let child = document.createElement("p");
 document.querySelector('#elementoOndeVoceEsta').appendChild(child)
 
+// 3
+let chil2 = document.createElement("p")
+document.querySelector('#primeiroFilhoDoFilho').appendChild(chil2)
+
+// 4
+chil2.className = "SonOfSon"
+console.log(document.querySelector('.SonOfSon').parentElement.parentElement.nextElementSibling)
 // // Acesse o elemento elementoOndeVoceEsta .
 // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
 // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
