@@ -39,7 +39,7 @@ upperCase()
 // Exercicio 6;
 function printTheTag(p){
     let print = document.getElementsByTagName("p")
-    for(let index = 0;index < print.length;index ++){
+    for(let index = 0;index < print.length;index += 1){
         console.log(print[index])
     }
 }
