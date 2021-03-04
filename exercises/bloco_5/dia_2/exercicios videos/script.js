@@ -7,6 +7,13 @@ document.querySelector("#elementoOndeVoceEsta").nextSibling
 document.querySelector('#elementoOndeVoceEsta').nextElementSibling
 document.querySelector("#pai").firstElementChild.nextElementSibling.nextElementSibling
 
+// Exercicio video 2
+let brother = document.createElement("div")
+document.querySelector('#pai').appendChild(brother)
+
+// 2 
+let child = document.createElement("p");
+document.querySelector('#elementoOndeVoceEsta').appendChild(child)
 
 // // Acesse o elemento elementoOndeVoceEsta .
 // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
