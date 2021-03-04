@@ -21,11 +21,18 @@ redSquare("white");
 // Exercicio 4 ;
 
 function errorText(text){
-    document.getElementsByClassName('title')[0].innerText = text;
+    document.getElementsByClassName('title')[0].innerText = "Exercício 5.1 - Java" + text;
 }
-errorText("Exercício 5.1 - JavaScript")
+errorText("Script")
 
 
-// function  backGround(color){
-//     let color1 = document.getElementsByClassName("main-content")[0].style
-// }
+// Exercicio 5;
+function upperCase(){
+    let letterBigger = document.getElementsByTagName('p');
+    for(let index = 0; index < letterBigger.length;index ++){
+        letterBigger[index].style.textTransform = "uppercase"
+    }
+
+}
+upperCase()
+
