@@ -36,3 +36,11 @@ function upperCase(){
 }
 upperCase()
 
+// Exercicio 6;
+function printTheTag(p){
+    let print = document.getElementsByTagName("p")
+    for(let index = 0;index < print.length;index ++){
+        console.log(print[index])
+    }
+}
+printTheTag()
