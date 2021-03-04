@@ -1,8 +1,11 @@
+document.querySelector("#pai").firstElementChild.nextElementSibling
 document.querySelector("#elementoOndeVoceEsta").parentNode.style.backgroundColor = "red"
 document.querySelector("#primeiroFilhoDoFilho").innerText = "Exercicios Doom "
-
-
-
+document.querySelector("#pai").firstElementChild
+document.querySelector("#elementoOndeVoceEsta").previousElementSibling
+document.querySelector("#elementoOndeVoceEsta").nextSibling
+document.querySelector('#elementoOndeVoceEsta').nextElementSibling
+document.querySelector("#pai").firstElementChild.nextElementSibling.nextElementSibling
 
 
 // // Acesse o elemento elementoOndeVoceEsta .
