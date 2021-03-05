@@ -58,17 +58,31 @@
   <body>
     <script>
       // COLOQUE SEU CÓDIGO AQUI
-    //   Exercicio 1
+    //   Exercicio 1;
       let h1 = document.createElement('h1');
       document.getElementsByTagName('body')[0].appendChild(h1).innerText = "Exercício 5.2 - JavaScript DOM";
-    //   Exercicio 2
+    //   Exercicio 2;
       let div = document.createElement('div');
       document.getElementsByTagName('body')[0].appendChild(div);
       div.className = "main-content";
-    //   Exercicio 3
+    //   Exercicio 3;
       let childDiv = document.createElement('div');
       document.querySelector('.main-content').appendChild(childDiv);
       childDiv.className = "center-content "
+    //   Exercicio 4;
+    let p = document.createElement('p');
+    document.querySelector('.center-content').appendChild(p)
+    p.innerText = "Java script é muito bom!"
+    // Exercicio 5;
+    let child2Div = document.createElement('div');
+    document.querySelector('.main-content').appendChild(child2Div);
+    child2Div.className = "left-content"
+
+
+     
+
+
+
     </script>
   </body>
 </html>
