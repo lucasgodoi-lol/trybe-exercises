@@ -66,22 +66,22 @@
       document.getElementsByTagName('body')[0].appendChild(div);
       div.className = "main-content";
     //   Exercicio 3;
-      let Div = document.createElement('div');
-      document.querySelector('.main-content').appendChild(Div);
-      Div.className = "center-content "
+      let div1 = document.createElement('div');
+      document.querySelector('.main-content').appendChild(div1);
+      div1.className = "center-content "
     //   Exercicio 4;
     let p = document.createElement('p');
     document.querySelector('.center-content').appendChild(p)
     p.innerText = "Java script é muito bom!"
     // Exercicio 5;
-    let Div2 = document.createElement('div');
-    document.getElementsByClassName('main-content')[0].appendChild(Div2)
-    Div2.className = 'left-content'
+    let div2 = document.createElement('div');
+    document.getElementsByClassName('main-content')[0].appendChild(div2)
+    div2.className = 'left-content'
     
     // Exercicio 6;
-    let Div3 = document.createElement('div');
-    document.querySelector('.main-content').appendChild(Div3)
-    Div3.className = "right-content";
+    let div3 = document.createElement('div');
+    document.querySelector('.main-content').appendChild(div3)
+    div3.className = "right-content";
     // Exercicio 7;
     let image = document.createElement('img');
     document.querySelector('.left-content').appendChild(image).src = 'https://picsum.photos/200'
@@ -110,11 +110,13 @@ for(let index = 0;index < 3;index +=1){
 }
 // Exercicio 12;
 let a = document.querySelector('.main-content')
-a.removeChild(Div2)
+a.removeChild(div2)
      
+// Exercicio 13;
+div3.style.marginRight = "auto";
 
-
-
+// Exercicio 14;
+div1.parentElement.style.backgroundColor = "green"
     </script>
   </body>
 </html>
