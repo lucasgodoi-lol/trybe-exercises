@@ -87,7 +87,16 @@
     document.querySelector('.left-content').appendChild(image).src = 'https://picsum.photos/200'
     image.className = 'small-image'
     // Exercicio 8;
+    let lista = document.createElement('ul')
+    document.querySelector('.right-content').appendChild(lista)
+
+  let numero = 0;
+   for(let index = 1;index <= 10;index +=1){
+      let numbers = numero + index;
+    let lista1 = document.createElement('li')
+    document.querySelector('ul').appendChild(lista1).innerText = numbers
     
+   }
 
 
 
