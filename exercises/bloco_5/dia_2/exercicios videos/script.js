@@ -23,6 +23,9 @@ document.querySelector('#primeiroFilhoDoFilho').appendChild(chil2)
 chil2.className = "SonOfSon"
 console.log(document.querySelector('.SonOfSon').parentElement.parentElement.nextElementSibling)
 
+// 5
+let pai = document.querySelector('#paiDoPai')
+let filho = document.querySelector('#primeiroFilho')
 
 
 
