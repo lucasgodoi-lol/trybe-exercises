@@ -52,4 +52,13 @@ function eventClickButton(){
   })
 }
 eventClickButton();
+
+function friday(fri){
+  let buttonFriday = document.createElement('button');
+  buttonFriday.id = 'btn-friday';
+  document.querySelector('.buttons-container').appendChild(buttonFriday)
+  buttonFriday.innerText = fri;
+}
+friday('Sexta-Feira');
+
   // Escreva seu código abaixo.
