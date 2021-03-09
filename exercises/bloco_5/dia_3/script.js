@@ -24,8 +24,32 @@ function createDaysOfTheWeek() {
        lista.classList.add('friday')
      }
     }
+    
   }
-  
   createDaysOfTheWeek();
+
+  function feriado(nameButton){
+    let newButton = document.createElement('button')
+    document.querySelector('.buttons-container').appendChild(newButton)
+    newButton.innerText = nameButton;
+    newButton.id = 'btn-holiday'
+  }
+  feriado('Feriados')
   
+function eventClickButton(){
+  let holidayClass = document.getElementsByClassName('holiday');
+  let button = document.getElementById('btn-holiday');
+  let newcolor = 'white'
+  let backgroundColor = 'rgb(238,238,238)'
+  button.addEventListener('click', function(){
+    for(let index = 0;index < holidayClass.length; index += 1){
+     if(holidayClass[index].style.backgroundColor === newcolor){
+       holidayClass[index].style.backgroundColor = backgroundColor;
+     }else {
+       holidayClass[index].style.backgroundColor = newcolor
+     }
+    }
+  })
+}
+eventClickButton();
   // Escreva seu código abaixo.
