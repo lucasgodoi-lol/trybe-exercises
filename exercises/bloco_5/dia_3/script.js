@@ -61,4 +61,20 @@ function friday(fri){
 }
 friday('Sexta-Feira');
 
+function buttonFriday(){
+  let friday = document.getElementById('btn-friday');
+  let fridayClick = document.getElementsByClassName('friday');
+  let newcolor = 'blue';
+  let backgroundColor = 'rgb(238,238,238)';
+  friday.addEventListener('click', function(){
+  for(let index = 0; index < fridayClick.length; index += 1){
+    if(fridayClick[index].style.backgroundColor === newcolor){
+      fridayClick[index].style.backgroundColor = backgroundColor;
+    }else {
+      fridayClick[index].style.backgroundColor = newcolor
+    }
+  }
+  })
+}
+buttonFriday()
   // Escreva seu código abaixo.
