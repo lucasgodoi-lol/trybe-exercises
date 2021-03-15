@@ -77,4 +77,20 @@ function buttonFriday(){
   })
 }
 buttonFriday()
+
   // Escreva seu código abaixo.
+
+  function passarMouse(){
+    const day = document.getElementById('days');
+    day.addEventListener('mouseover', (e) => {
+      const target1 = e.target;
+      const days = document.querySelectorAll('.day');
+      for(let index = 0; index < days.length; index += 1){
+        days[index].style.fontSize = '20px'
+        if(target1.classList.contains('day')){
+         target1.style.fontSize = '40px'
+        }
+      }
+    })
+  }
+  passarMouse();
