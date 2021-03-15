@@ -8,7 +8,7 @@ for(let index = 0;index < n;index ++){
     line = line + asteristik
 }
 for(let index = 0;index < n ; index ++){
-    // console.log(line)
+    console.log(line)
 }
 
 
