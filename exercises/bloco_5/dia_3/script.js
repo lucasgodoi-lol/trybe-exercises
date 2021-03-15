@@ -94,3 +94,14 @@ buttonFriday()
     })
   }
   passarMouse();
+
+  // Exercicio 7
+  function tarefaPersonalizada(nomeTarefa){
+   const paiDiv = document.querySelector('.my-tasks');
+   const tasks = document.createElement('span');
+   paiDiv.appendChild(tasks);
+   tasks.innerText = nomeTarefa;
+  }
+tarefaPersonalizada('Jogar')
+
+// Exercicio 8;
