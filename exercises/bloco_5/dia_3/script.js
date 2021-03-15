@@ -112,3 +112,17 @@ function color (cor){
  paiDiv.appendChild(cor1)
 }
 color('purple')
+
+// Exercicio 9;
+
+function click(){
+  paiDiv.addEventListener('click', () => {
+    const filho = document.querySelector('.task');
+   if(filho.classList.contains('selected')){
+   filho.classList.remove('selected')
+  }else {
+   filho.classList.add('selected')
+  }
+})
+}
+click();
