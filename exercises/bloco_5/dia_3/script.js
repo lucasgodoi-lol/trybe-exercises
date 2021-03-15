@@ -94,10 +94,9 @@ buttonFriday()
     })
   }
   passarMouse();
-
+  const paiDiv = document.querySelector('.my-tasks');
   // Exercicio 7
   function tarefaPersonalizada(nomeTarefa){
-   const paiDiv = document.querySelector('.my-tasks');
    const tasks = document.createElement('span');
    paiDiv.appendChild(tasks);
    tasks.innerText = nomeTarefa;
@@ -105,3 +104,11 @@ buttonFriday()
 tarefaPersonalizada('Jogar')
 
 // Exercicio 8;
+
+function color (cor){
+ const cor1 = document.createElement('div');
+ cor1.classList.add('task');
+ cor1.style.backgroundColor = cor
+ paiDiv.appendChild(cor1)
+}
+color('purple')
