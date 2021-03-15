@@ -111,18 +111,40 @@ function color (cor){
  cor1.style.backgroundColor = cor
  paiDiv.appendChild(cor1)
 }
-color('purple')
+color('purple');
+color('blue');
 
 // Exercicio 9;
 
 function click(){
-  paiDiv.addEventListener('click', () => {
-    const filho = document.querySelector('.task');
-   if(filho.classList.contains('selected')){
-   filho.classList.remove('selected')
-  }else {
-   filho.classList.add('selected')
-  }
+  paiDiv.addEventListener('click', (e) => {
+    const target1 = e.target;
+    const filho = document.querySelectorAll('.task');
+    for (let index = 0; index < filho.length; index += 1){
+      filho[index].classList.remove('selected')
+      if(target1.classList.contains('task') )
+      target1.classList.add('selected')
+    }
 })
 }
 click();
+
+// Exercicio 10 ;
+function addEvent (){
+  const days = document.getElementById('days');
+  days.addEventListener('click', (e) => {
+    const eventTarget1 = e.target;
+    const selected = document.querySelector('.selected');
+    const listDay = document.getElementsByClassName('day');
+    for(let index = 0; index < listDay.length; index +=1 ){
+      if(eventTarget1.classList.contains('day') && eventTarget1.style.color === selected.style.backgroundColor){
+        eventTarget1.style.color = 'rgb(119,119,119)';
+      }else {
+        eventTarget1.style.color = selected.style.backgroundColor
+      }
+    }
+})
+}
+addEvent();
+
+
