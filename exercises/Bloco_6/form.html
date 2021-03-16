@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Curriculo</h1>
+    </header>
     <form action="" method="GET">
-    <fieldset>
+    <fieldset class="dados">
+        <legend>Seus Dados</legend>
         <label for="input-nome">Digite seu nome:
         <input type="text" name="nome" id="input-nome" maxlength="40" required>
     </label>
@@ -31,16 +35,31 @@
     </label>
         <br>
         <label for="input-estados">Selecione seu estado:
-        <select name="estados" id="input-estados" required>
+        <select name="estados" id="input-estados"  required>
         </select>
     </label>
         <br>
         <label for="moradia1">
-        <input type="radio" name="moradia" id="moradia1" value="apartamento">Apartamento
+        <input type="radio" name="moradia" id="moradia1" value="apartamento" checked>Apartamento
     </label>
         <label for="moradia2">
         <input type="radio" name="moradia" id="moradia2" value="casa">Casa
     </label>
+    </fieldset>
+    <fieldset class="dados">
+        <legend>Dados Sobre seu último emprego</legend>
+        <label for="text-ultimoEmprego"></label>
+        <textarea name="text-ultimoEmprego" id="text-ultimoEmprego" cols="30" rows="10" maxlength="1000" placeholder="Maximo de caracteres 1000" required></textarea>
+        <br>
+        <label for="input-cargo">Seu cargo:</label>
+        <input type="text" name="cargo" id="input-cargo">
+        <br>
+        <label for="input-descricao">Descreve o seu cargo</label>:
+        <input type="text" name="descreva-cargo" id="input-descricao" maxlength="500" required>
+        <br>
+        <label for="input-data">Data de inicio:</label>
+        <input type="text" name="day" id="input-data" required placeholder="dd/mm/aaaa">
+        <button id="buttonDate">Enviar</button>
     </fieldset>
 </form>
     <script src="script.js"></script>
