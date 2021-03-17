@@ -1,55 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    background-color: rgb(236, 234, 234);
 }
 
-body {
-    background-color: rgb(216, 218, 218);
+button {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 header {
-    padding: 50px;
-    background-color:rgb(181, 235, 235);
-    text-align: center;
-    border: 5px solid black;
+    padding: 20px;
+    border: 3px solid black;
     border-radius: 10px;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 50%;
+    margin: auto;
+    background-color: rgb(209, 208, 206);
+    margin-bottom: 20px;
 }
 
 h1 {
-    color: rgb(122, 122, 126);
+    text-align: center;
 }
 
-.dados{
-    background-color: rgb(150, 223, 233);
-    margin-top: 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+.control {
+    max-width: 50%;
+    margin: auto;
+}
+
+legend {
+    border: 3px solid black;
     border-radius: 10px;
-    border: 4px solid black;
-    font-size: 30px;
+    background-color: black;
+    color: white;
+    margin: auto;
 }
 
-input {
-    background-color: rgb(233, 236, 236);
-    margin-top: 20px;
-}
-
-label {
-    font-weight: 900;
-    font-size: 20px;
-    margin-left: 30px;
-}
-
-#input-estados {
-    margin-top: 20px;
-}
-
-span {
-    font-size: 15px;
-    margin-right: -20px;
-}

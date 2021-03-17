@@ -1,67 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
 </head>
+
 <body>
     <header>
-        <h1>Curriculo</h1>
+        <h1 class="title is-1">Currículo</h1>
     </header>
     <form action="" method="GET">
-    <fieldset class="dados">
-        <legend>Seus Dados</legend>
-        <label for="input-nome">Digite seu nome:
-        <input type="text" name="nome" id="input-nome" maxlength="40" required>
-    </label>
-        <br>
-        <label for="input-email">Digite seu email:
-        <input type="email" name="email" id="input-email" maxlength="50" required>
-    </label>
-        <br>
-        <label for="input-cpf">Digite seu cpf:
-        <input type="text" name="cpf" id="input-cpf" maxlength="11" required>
-    </label>
-        <br>
-        <label for="input-endereço">Digite seu endereço:
-        <input type="text" name="endereço" id="input-endereço" maxlength="200" required>
-    </label>
-        <br>
-        <label for="input-cidade">Digite sua cidade:
-        <input type="text" name="cidade" id="input-cidade" maxlength="28" required>
-    </label>
-        <br>
-        <label for="input-estados">Selecione seu estado:
-        <select name="estados" id="input-estados"  required>
-        </select>
-    </label>
-        <br>
-        <label for="moradia1">
-        <input type="radio" name="moradia" id="moradia1" value="apartamento" checked>Apartamento
-    </label>
-        <label for="moradia2">
-        <input type="radio" name="moradia" id="moradia2" value="casa">Casa
-    </label>
-    </fieldset>
-    <fieldset class="dados">
-        <legend>Dados Sobre seu último emprego</legend>
-        <label for="text-ultimoEmprego"></label>
-        <textarea name="text-ultimoEmprego" id="text-ultimoEmprego" cols="30" rows="10" maxlength="1000" placeholder="Maximo de caracteres 1000" required></textarea>
-        <br>
-        <label for="input-cargo">Seu cargo:</label>
-        <input type="text" name="cargo" id="input-cargo">
-        <br>
-        <label for="input-descricao">Descreve o seu cargo</label>:
-        <input type="text" name="descreva-cargo" id="input-descricao" maxlength="500" required>
-        <br>
-        <label for="input-data">Data de inicio:</label>
-        <input type="text" name="day" id="input-data" required placeholder="dd/mm/aaaa">
-        <button id="buttonDate">Enviar</button>
-    </fieldset>
-</form>
+        <fieldset class="field">
+            <legend>Seus Dados</legend>
+            <div class="control">
+                <label class="label" for="input-nome">Digite seu nome:
+                    <input class="input" type="text" name="nome" id="input-nome" maxlength="40" required>
+                </label>
+            </div>
+            <br>
+            <div class="control">
+                <label class="label" for="input-email">Digite seu email:
+                    <input class="input" type="email" name="email" id="input-email" maxlength="50" required>
+                </label>
+            </div>
+            <br>
+            <div class="control">
+                <label class="label" for="input-cpf">Digite seu cpf:
+                    <input class="input" type="text" name="cpf" id="input-cpf" maxlength="11" required>
+                </label>
+            </div>
+            <br>
+            <div class="control">
+                <label class="label" for="input-endereço">Digite seu endereço:
+                    <input class="input" type="text" name="endereço" id="input-endereço" maxlength="200" required>
+                </label>
+            </div>
+            <br>
+            <div class="control">
+                <label class="label" for="input-cidade">Digite sua cidade:
+                    <input class="input" type="text" name="cidade" id="input-cidade" maxlength="28" required>
+                </label>
+            </div>
+            <br>
+            <div class="control">
+                <label class="label" for="input-estados">Selecione seu estado:
+                    <div class='select is-primary'>
+                        <select name="estados" id="input-estados" required></select>
+                    </div>
+                </label>
+            </div>
+            <div class="control">
+                <br>
+                <label class="radio" for="moradia1">
+                    <input type="radio" name="moradia" id="moradia1" value="apartamento" checked>Apartamento
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio" for="moradia2">
+                    <input type="radio" name="moradia" id="moradia2" value="casa">Casa
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="field" class="dados">
+            <legend>Dados Sobre seu último emprego</legend>
+            <div class="control">
+                <label class="label" for="text-ultimoEmprego"></label>
+                <textarea class='textarea is-info' name="text-ultimoEmprego" id="text-ultimoEmprego" cols="30" rows="10"
+                    maxlength="1000" placeholder="Maximo de caracteres 1000" required></textarea>
+                <br>
+            </div>
+            <div class="control">
+                <label class="label" for="input-cargo">Seu cargo:</label>
+                <input class="input" type="text" name="cargo" id="input-cargo">
+                <br>
+            </div>
+            <div class="control">
+                <label class="label" for="input-descricao">Descreve o seu cargo:</label>
+                <input class="input" type="text" name="descreva-cargo" id="input-descricao" maxlength="500" required>
+                <br>
+            </div>
+            <div class="control">
+                <label class="label" for="input-data">Data de inicio:</label>
+                <input class="input" type="text" name="day" id="input-data" required placeholder="dd/mm/aaaa">
+            </div>
+            <div class="control">
+                <button class="button is-danger is-outlined" type="submit" id="buttonDate">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+    <script src="/moment.js"></script>
+    <script src="/just-validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

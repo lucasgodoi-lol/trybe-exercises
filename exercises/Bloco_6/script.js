@@ -9,19 +9,24 @@ function statesOfBrazil(){
 }
 statesOfBrazil();
 
-function  data(){
-    const button = document.querySelector('#buttonDate');
-    button.addEventListener('click', () => {
-        const input = document.querySelector('#input-data');
-        const valor =  input.value.split('/')
-        const dia = parseInt(valor[0]);
-        const mes = parseInt(valor[1]);
-        const ano = parseInt(valor[2]);
-        console.log(dia)
-        if(dia > 0 && dia <= 31 && mes > 0 && mes <= 12 && ano > 1990 && ano <= 3000){
-        }else {
-            alert('erro contextualizada!')
-        }
-    })
-}
-data();
+// function  data(){
+//     const button = document.querySelector('#buttonDate');
+//     button.addEventListener('click', () => {
+//         const input = document.querySelector('#input-data');
+//         const valor =  input.value.split('/')
+//         const dia = parseInt(valor[0]);
+//         const mes = parseInt(valor[1]);
+//         const ano = parseInt(valor[2]);
+//         console.log(dia)
+//         if(dia > 0 && dia <= 31 && mes > 0 && mes <= 12 && ano > 1990 && ano <= 3000){
+//         }else {
+//             alert('erro contextualizada!')
+//         }
+//     })
+// }
+// data();
+
+var picker = new Pikaday({ 
+    field: document.getElementById('input-data'),
+    format : 'DD/MM/YYYY',
+});
