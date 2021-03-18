@@ -40,7 +40,11 @@ legend {
     resize: none;
 }
 
-button:hover{
+button:focus {
     transform: scale(1.5);
+}
+
+option:hover {
+    background-color: black;
 }
 

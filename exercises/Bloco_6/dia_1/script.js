@@ -69,7 +69,7 @@ function colors() {
         const g = Math.floor(Math.random() * 255)
         const b = Math.floor(Math.random() * 255)
         const rgb = `rgb(${r}, ${g}, ${b})`
-        if (rgb !== 'rgb(255,255,255)') {
+        if (rgb !== 'rgb(255, 255, 255)') {
             option[index].style.backgroundColor = rgb;
         }
         option[index].style.color = 'white'
@@ -81,14 +81,14 @@ colors();
 
 function colorsOption() {
     const select = document.querySelector('select');
-    select.addEventListener('click', () => {
+    select.addEventListener('click', (e) => {
         const option = document.querySelectorAll('option');
         for (let index = 0; index < option.length; index += 1) {
             const r = Math.floor(Math.random() * 255)
             const g = Math.floor(Math.random() * 255)
             const b = Math.floor(Math.random() * 255)
             const rgb = `rgb(${r}, ${g}, ${b})`
-            if (rgb !== 'rgb(255,255,255)') {
+            if (rgb !== 'rgb(255, 255, 255)') {
                 option[index].style.backgroundColor = rgb;
             }
         }
@@ -110,3 +110,4 @@ function click2() {
 }
 click2();
 
+new JustValidate('.js-form', {})
