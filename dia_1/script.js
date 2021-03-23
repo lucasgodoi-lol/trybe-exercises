@@ -34,3 +34,12 @@ const numeros = () =>{
 }
 numeros();
 console.log(oddsAndEvens)
+
+const factorialNumber = (factorial) => {
+    let numero = 1;
+    for(let index = factorial; index >= 1; index -=1 ){
+     numero *= index;
+    }
+    return numero
+}
+console.log(factorialNumber(5));
