@@ -58,18 +58,16 @@ const lesson1 = {
 // console.log(valuesOfObject(lesson1));
 
 // Exercicio 5
- const allLesson = Object.assign({},{lesson1, lesson2, lesson3})
- Object.assign(allLesson,{lesson2})
- Object.assign(allLesson,{lesson3})
- console.log(allLesson)
+ const allLesson = {key1:Object.assign({}, lesson1) , key2:Object.assign({}, lesson2), key3:Object.assign({}, lesson3)}
+//  console.log(allLesson)
 
-const createNewObject = (lesson1, lesson2, lesson3) => {
+//  Exercicio 6
 
-    const  allLessons = [lesson1, lesson2, lesson3];
-    let outPut = {};
-    for(let index = 0; index < allLessons.length; index += 1){
-     outPut[`lesson${index +1}`] = allLessons[index]
-    }
-    return  outPut;
+const returnNumbersOfStudents = (object) => {
+    let a = object.key1.numeroEstudantes;
+    let b = object.key2.numeroEstudantes;
+    let c = object.key3.numeroEstudantes;
+    const resultado = a + b + c ;
+   return `O números de todos estudantes são ${resultado}`
 }
-console.log(createNewObject(lesson1, lesson2, lesson3));
+console.log((returnNumbersOfStudents(allLesson)));
