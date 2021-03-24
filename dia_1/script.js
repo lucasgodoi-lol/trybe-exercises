@@ -33,7 +33,7 @@ const numeros = () =>{
    }
 }
 numeros();
-console.log(oddsAndEvens)
+console.log(`Os numeros  ${oddsAndEvens} se encontram ordenados de forma crescente`)
 
 const factorialNumber = (factorial) => {
     let numero = 1;
@@ -43,3 +43,34 @@ const factorialNumber = (factorial) => {
     return numero
 }
 console.log(factorialNumber(5));
+
+const frase  = 'Antônio, foi, no, banheiro e não sabemos o que  aconteceu';
+
+const biggerNumber = () => {
+    const array = frase.split(' ');
+    let bigger = '';
+    // array.forEach((palavra) => {
+    //     if(palavra.length > bigger.length) {
+    //        bigger = palavra
+    //     }
+    // })
+    for(let index = 1; index < array.length; index += 1){
+            if(array[index].length < bigger.length){
+                bigger = array[index]
+            }
+            }
+    console.log(array.join(' '));
+}
+biggerNumber();
+
+const clickCont = () => {
+    const button = document.querySelector('button');
+    let conta = 0;
+    button.addEventListener('click', () => {
+    const p = document.querySelector('p');
+    p.innerHTML = `O número de clicks é igual há: ${conta +=1}`
+   
+    })
+}
+
+clickCont();
