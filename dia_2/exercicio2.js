@@ -60,7 +60,6 @@ const lesson1 = {
 // Exercicio 5
  const allLesson = {key1:Object.assign({}, lesson1) , key2:Object.assign({}, lesson2), key3:Object.assign({}, lesson3)}
 //  console.log(allLesson)
-
 //  Exercicio 6
 
 const returnNumbersOfStudents = (object) => {
@@ -76,8 +75,15 @@ const getValue = (objeto, i) => {
     let output = '';
     const value = Object.values(objeto)
     for(let index = 0; index < value.length;index +=1){
-        output = value[i]
+      output = value[i]
     }
   return output
 }
-console.log(getValue(lesson1, 1))
+console.log(getValue(lesson1, 0));
+
+const checked = (objeto, key, value) => {
+   const chave = Object.keys(objeto).includes(key);
+   const valor = Object.values(objeto).includes(value)
+   return `${chave} ${valor}`
+}
+console.log(checked(lesson3, 'turno' , 'noite'));
