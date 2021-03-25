@@ -87,3 +87,16 @@ const checked = (objeto, key, value) => {
    return `${chave} ${valor}`
 }
 console.log(checked(lesson3, 'turno' , 'noite'));
+let valor = false;
+const checkedMain = (object, key, value) => {
+  const objeto = Object.entries(object);
+  for(let index = 0; index < objeto.length; index += 1){
+    if(objeto[index].includes(key) && objeto[index].includes(value)){
+           return true;
+    }else {
+      return false;
+}
+  }
+}
+console.log(checkedMain(lesson2, 'brasil', 'Carlos' ));
+console.log(checkedMain(lesson3, 'professor', 'Maria Clara'))
