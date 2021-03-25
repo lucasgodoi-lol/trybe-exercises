@@ -70,4 +70,14 @@ const returnNumbersOfStudents = (object) => {
     const resultado = a + b + c ;
    return `O números de todos estudantes são ${resultado}`
 }
-console.log((returnNumbersOfStudents(allLesson)));
+// console.log((returnNumbersOfStudents(allLesson)));
+
+const getValue = (objeto, i) => {
+    let output = '';
+    const value = Object.values(objeto)
+    for(let index = 0; index < value.length;index +=1){
+        output = value[i]
+    }
+  return output
+}
+console.log(getValue(lesson1, 1))
