@@ -31,4 +31,22 @@ const factorial = (number) => {
     return num
   }
   console.log(factorial(9))
+
+//   const removeMiddle = (words) => {
+//      const remove = words
+//      remove.splice(2,1)
+//      return remove
+//     }
+//  console.log(removeMiddle(['mouse', 'giraffe', 'queen', 'window', 'bottle']))
   
+// const u = ['mouse', 'giraffe', 'queen', 'window', 'bottle']
+// u.splice(2,1)
+
+const removeMiddle = (words) => {
+    const remove = Math.floor(words.length / 2)
+    const results = words[remove]
+    console.log(results)
+    words.splice(remove,1)
+    return results
+   }
+   console.log(removeMiddle(['mouse', 'giraffe', 'queen', 'window', 'bottle']))
