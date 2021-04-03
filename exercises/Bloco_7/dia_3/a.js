@@ -44,7 +44,7 @@ const factorial = (number) => {
 
 const removeMiddle = (words) => {
     const remove = Math.floor(words.length / 2)
-    const results = words[remove]
+    const results = [words[remove]]
     console.log(results)
     words.splice(remove,1)
     return results
