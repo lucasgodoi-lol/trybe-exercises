@@ -22,3 +22,13 @@ function secondThirdSmallest(array) {
     return results;
 };
 console.log(secondThirdSmallest([900,1200,300,500]))
+
+const factorial = (number) => {
+    let num = 1;
+    for(let index = number; index >= 1; index -= 1) {
+        num *= index
+    }
+    return num
+  }
+  console.log(factorial(9))
+  
