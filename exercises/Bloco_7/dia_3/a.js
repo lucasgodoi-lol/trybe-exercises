@@ -1,8 +1,10 @@
 
-
-let a = [1,3,6,7]
-let c =[]
-for(let index = 0; index < a.length; index ++) {
-  c.push(a[index] += 1)
-}
-console.log(c)
+const greetPeople = (people) => {
+    let greeting = [];
+  
+    for (const person in people) {
+     greeting.push(`a ${people[person]}`)
+    }
+    return greeting;
+  };
+  console.log(greetPeople(['Irina', 'Ashleigh', 'Elsa']))
