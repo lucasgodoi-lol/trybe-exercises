@@ -12,3 +12,13 @@ const fn = (a) => {
 
 let a = [40,50,10,20,5,67,1,2];
 console.log(fn(a))
+
+function secondThirdSmallest(array) {
+    let results = []
+    array.sort(function (x, y) {
+        return x - y;
+    });
+    results = [array[1], array[2]];
+    return results;
+};
+console.log(secondThirdSmallest([900,1200,300,500]))
