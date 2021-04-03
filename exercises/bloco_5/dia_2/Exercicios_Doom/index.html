@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+    //   Exercicio 1;
+      let h1 = document.createElement('h1');
+      document.getElementsByTagName('body')[0].appendChild(h1).innerText = "Exercício 5.2 - JavaScript DOM";
+    //   Exercicio 2;
+      let div = document.createElement('div');
+      document.getElementsByTagName('body')[0].appendChild(div);
+      div.className = "main-content";
+    //   Exercicio 3;
+      let div1 = document.createElement('div');
+      document.querySelector('.main-content').appendChild(div1);
+      div1.className = "center-content "
+    //   Exercicio 4;
+    let p = document.createElement('p');
+    document.querySelector('.center-content').appendChild(p)
+    p.innerText = "Java script é muito bom!"
+    // Exercicio 5;
+    let div2 = document.createElement('div');
+    document.getElementsByClassName('main-content')[0].appendChild(div2)
+    div2.className = 'left-content'
+    
+    // Exercicio 6;
+    let div3 = document.createElement('div');
+    document.querySelector('.main-content').appendChild(div3)
+    div3.className = "right-content";
+    // Exercicio 7;
+    let image = document.createElement('img');
+    document.querySelector('.left-content').appendChild(image).src = 'https://picsum.photos/200'
+    image.className = 'small-image'
+    // Exercicio 8;
+    let lista = document.createElement('ul')
+    document.querySelector('.right-content').appendChild(lista)
+    let lista1;
+  let numero = 0;
+   for(let index = 1;index <= 10;index +=1){
+      let numbers = numero + index;
+     lista1 = document.createElement('li')
+    document.querySelector('ul').appendChild(lista1).innerText = numbers
+   }
+//    Exercicio 9;
+for(let index = 1; index <= 3;index +=1){
+    let h3 = document.createElement('h3')
+    document.querySelector('.main-content').appendChild(h3)
+}
+// Exercicio 10;
+h1.className = "title"
+
+// Exercicio 11;
+for(let index = 0;index < 3;index +=1){
+    document.querySelectorAll('h3')[index].className = "description"
+}
+// Exercicio 12;
+let a = document.querySelector('.main-content')
+a.removeChild(div2)
+     
+// Exercicio 13;
+div3.style.marginRight = "auto";
+
+// Exercicio 14;
+div1.parentElement.style.backgroundColor = "green"
+
+// Exercicio 15;
+lista.lastElementChild.remove(lista1)
+lista.lastElementChild.remove(lista1)
+
+    </script>
+  </body>
+</html>
