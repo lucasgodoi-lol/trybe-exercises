@@ -71,4 +71,4 @@ const passwordClient = (password) => {
     return true
 
 }
-console.log(passwordClient('aaaaaaaaaaaaaaaA1'))
+passwordClient('aaaaaaaaaaaaA1')
