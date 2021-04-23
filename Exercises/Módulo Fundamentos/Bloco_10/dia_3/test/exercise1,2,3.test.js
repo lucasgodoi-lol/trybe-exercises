@@ -1,4 +1,4 @@
-const result = require('../src/exercise1,2')
+const result = require('../src/exercise1,2,3')
 
 test('test return of function randomNumber', () => {
    result.randomNumber = jest 
@@ -17,3 +17,16 @@ test('test division of function randomNumber',() => {
    expect(result.randomNumber).toHaveBeenCalledTimes(1);
    expect(result.randomNumber).toHaveBeenLastCalledWith(15, 3)
 })
+
+test('test implementation randomNumber', () => {
+   const spyRandom = jest
+     .spyOn(result, 'randomNumber')
+     .mockImplementation((a, b, c) => a * b * c);
+   expect(spyRandom(2, 2, 3)).toBe(12);
+   result.randomNumber.mockReset();
+   result.randomNumber = jest
+     .fn()
+     .mockImplementation((a) => a * 2);
+   expect(result.randomNumber(100)).toBe(200);
+ });
+
