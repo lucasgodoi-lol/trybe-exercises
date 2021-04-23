@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercises",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">        <img src =\"https://ik.imagekit.io/kktisrb4zg2/68747470733a2f2f75706c6f6164732d73736c2e776562666c6f772e636f6d2f3564626439636537356164363466323462363766303933322f3564626464393136356164363466356532393831316335325f4252414e44332e706e67_7SZyblfxM.png\">       </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasgodoi-lol/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasgodoi-lol/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/lucasgodoi-lol/trybe-exercises#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

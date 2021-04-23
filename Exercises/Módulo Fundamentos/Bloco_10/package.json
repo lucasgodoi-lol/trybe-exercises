@@ -1,0 +1,19 @@
+{
+  "name": "Bloco_10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exerciseBonus.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.22",
+    "node-fetch": "^2.6.1"
+  }
+}
