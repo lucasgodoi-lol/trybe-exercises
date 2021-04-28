@@ -1,0 +1,40 @@
+body {
+  background: url('https://wallpaperaccess.com/full/96968.png'),  linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+  background-size: cover;
+}
+
+
+
+.Pokemon {
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px gray;
+  margin-left: 20px;
+  text-align: center;
+  background: linear-gradient(rgb(71, 6, 133), rgb(114, 87, 139));
+}
+
+
+
+.father {
+ display: flex;
+ justify-content: center;
+ margin-top: 100px;
+ margin-right: 20px;
+}
+
+.Pokemon:hover {
+animation-name: pokemon;
+animation-duration: 2s;
+animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes pokemon {
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(-50deg);
+  }
+}
